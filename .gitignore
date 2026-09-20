@@ -1,0 +1,27 @@
+# Data provided by the course (large, not ours to redistribute)
+train.pkl
+test.pkl
+sample.csv
+
+# Model weights (large binaries, not meant for git)
+*.pth
+
+# Any generated submission files
+submission*.csv
+
+# Intermediate/ensemble prediction dumps
+ensemble_preds.pkl
+*.pkl
+
+# Debug/visualization animations
+animation*.gif
+
+# Bounding box cache regenerated from the data
+bounding_boxes.json
+
+# Exploratory notebook kept locally, not part of the final submission
+task3_functionnal.ipynb
+
+# Python / notebook cruft
+__pycache__/
+.ipynb_checkpoints/
