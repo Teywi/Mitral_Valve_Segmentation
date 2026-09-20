@@ -16,9 +16,6 @@ ensemble_preds.pkl
 # Debug/visualization animations
 animation*.gif
 
-# Bounding box cache regenerated from the data
-bounding_boxes.json
-
 # Exploratory notebook kept locally, not part of the final submission
 task3_functionnal.ipynb
 
