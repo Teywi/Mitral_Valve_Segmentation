@@ -2,7 +2,7 @@
 
 Team project for the Advanced Machine Learning course. We finished **2nd out of 147 teams** on the in-class Kaggle competition.
 
-Team: [Teywi](https://github.com/Teywi), Ambroise Aigueperse, Tunaberk Almaci.
+Team: Ambroise Aigueperse, Tunaberk Almaci, Thomas Zamblera.
 
 ## Task
 
