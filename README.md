@@ -44,6 +44,11 @@ Predicted masks (post voting/post-processing) overlaid on test videos:
   <img src="examples/animation10.gif" width="260" />
 </p>
 
+## Room for improvement
+
+- **Crop to the bounding box before feeding the model**, instead of only applying it as a post-hoc mask on the full-frame prediction. We already had per-video bounding boxes (`bounding_boxes.json`); running the models on the cropped region would let them spend their full resolution budget on the valve itself rather than on background, which should help most at 256×256 and could let us get 512×512-level detail without the memory/speed cost of full-frame 512×512 training.
+- **A more principled post-processing step.** Our smoothing/hole-filling was fairly generic; the mitral valve has real physical priors we didn't encode — the leaflets form a smooth, thin, roughly single-connected-component structure across a cardiac cycle, and motion between consecutive frames is continuous. A method that enforces smooth leaflet contours (e.g. active contours/snakes, an explicit shape prior, or a small elastic constraint between the two leaflets) and temporal consistency across frames (rather than segmenting each frame independently) would likely fix a lot of the remaining local errors post-ensembling.
+
 ## Repository contents
 
 - `task3.ipynb` — the main notebook: data loading, augmentation, model definitions/training calls, ensembling, and submission generation. This is the notebook that produced our final submissions.
