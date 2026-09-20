@@ -40,7 +40,7 @@ Predicted masks (post voting/post-processing) overlaid on test videos:
 
 <p float="left">
   <img src="examples/animation0.gif" width="260" />
-  <img src="examples/animation5.gif" width="260" />
+  <img src="examples/animation6.gif" width="260" />
   <img src="examples/animation10.gif" width="260" />
 </p>
 
