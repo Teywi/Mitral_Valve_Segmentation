@@ -13,8 +13,8 @@ submission*.csv
 ensemble_preds.pkl
 *.pkl
 
-# Debug/visualization animations
-animation*.gif
+# Debug/visualization animations (a few kept under examples/ for the README)
+/animation*.gif
 
 # Exploratory notebook kept locally, not part of the final submission
 task3_functionnal.ipynb

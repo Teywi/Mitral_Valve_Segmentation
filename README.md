@@ -34,6 +34,16 @@ After hyperparameter tuning, single models scored between 0.51 and 0.54 IoU at a
 
 Final predictions aggregate the four models' outputs through a voting scheme, followed by light post-processing (smoothing and hole-filling), which fit the smooth, closed-contour nature of the valve leaflets.
 
+## Example predictions
+
+Predicted masks (post voting/post-processing) overlaid on test videos:
+
+<p float="left">
+  <img src="examples/animation0.gif" width="260" />
+  <img src="examples/animation5.gif" width="260" />
+  <img src="examples/animation10.gif" width="260" />
+</p>
+
 ## Repository contents
 
 - `task3.ipynb` — the main notebook: data loading, augmentation, model definitions/training calls, ensembling, and submission generation. This is the notebook that produced our final submissions.
